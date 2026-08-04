@@ -19,7 +19,7 @@ Small tasks use a lightweight agent loop. The Graph Collaboration Protocol is re
 
 The files under `protocols/` are generic and suitable for sharing with the team. Treat files under `personal/` as individualized configuration and review them before distributing.
 
-This repository is private by default because future agent configuration may include personal paths, preferences, or workflow details.
+This repository is public so its generic protocols can be shared. Keep credentials, secrets, and sensitive personal configuration out of the repository.
 
 ## Adding Material
 
