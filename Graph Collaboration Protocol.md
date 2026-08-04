@@ -1,1 +1,1 @@
-personal/protocols/graph-collaboration-protocol.md
+protocols/graph-collaboration-protocol.md

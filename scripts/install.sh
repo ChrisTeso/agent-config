@@ -23,4 +23,4 @@ link_file() {
 mkdir -p "$playbook_root"
 
 link_file "$repository_root/personal/AGENTS.md" "$codex_root/AGENTS.md"
-link_file "$repository_root/personal/protocols/graph-collaboration-protocol.md" "$playbook_root/graph-collaboration-protocol.md"
+link_file "$repository_root/protocols/graph-collaboration-protocol.md" "$playbook_root/graph-collaboration-protocol.md"
