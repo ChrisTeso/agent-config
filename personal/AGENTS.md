@@ -48,6 +48,16 @@ Use a lightweight workflow by default. Prefer small, reusable playbooks over hea
 - Use tools to verify unstable or current facts, but do not drag tool findings from one thread into another unless they are relevant to the exact question being answered.
 - When multiple threads are active, prefer short explicit transitions so the user can tell whether you are answering the direct question or returning to execution work.
 
+## Signed-In Chrome Isolation
+
+- Whenever an agent uses the user's signed-in Chrome session, it must create a new named tab group dedicated to the current task before doing task work.
+- Name the group `Codex - <short task>` so its ownership and purpose are obvious.
+- Put every tab the agent opens or takes control of into that group immediately. If the user directs the agent to an existing tab, move it into the task group before interacting with it.
+- Give each concurrent agent task its own group. Do not share a group across agents unless the task explicitly requires coordinated ownership.
+- Do not inspect, control, move, or close tabs outside the task group unless the user explicitly identifies one for the task.
+- Close the owned tab group when the task is complete or no longer actionable. Leave it open only for a genuine user handoff, and state why it remains.
+- If the browser tooling cannot create or manage a tab group, stop and report the limitation instead of working in ungrouped tabs.
+
 ## Graph Collaboration Protocol
 
 At the beginning of substantial work, evaluate whether the task is suitable for the Graph Collaboration Protocol.
