@@ -9,6 +9,7 @@ Use a lightweight workflow by default. Prefer small, reusable playbooks over hea
 - Prefer artifacts, checklists, and concrete outputs over invented specialist personas.
 - Follow repo-local `AGENTS.md` and docs when they exist.
 - Prefer repo-provided verify and deploy scripts over ad hoc commands.
+- When giving time estimates, estimate the time Codex or another agent will need to complete the task, including relevant tool execution and verification. Do not substitute human engineering effort unless the user explicitly asks for it.
 - Answer the user's current question directly before resuming or referencing the active implementation thread.
 - Treat new scoped questions as local branches of the conversation; do not merge them with ongoing work unless the user asks for that connection or it is necessary for accuracy.
 - When the user asks about a specific link, provider, product, alternative, or process, evaluate that item on its own terms first and keep any "for our current setup" context clearly separated.
