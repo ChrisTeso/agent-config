@@ -67,6 +67,7 @@ This applies especially to product strategy, architecture, implementation choice
 - Delegate bounded subtasks, parallel exploration, and verification work; keep the main user-facing judgment and scope interpretation in the primary thread.
 - Use tools to verify unstable or current facts, but do not drag tool findings from one thread into another unless they are relevant to the exact question being answered.
 - When multiple threads are active, prefer short explicit transitions so the user can tell whether you are answering the direct question or returning to execution work.
+- When Playwright testing opens a Chrome or Chromium browser, always close or quit the browser window and process created for the test when testing ends, including after failures. Do not close browser windows or processes that were already running before the test.
 
 ## Graph Collaboration Protocol
 
